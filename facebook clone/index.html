@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b29a66fb02.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="images/connect logo.png" class="logo">
+            <ul>
+                <li><img src="images/bell2 logo.png"></li>
+                <li><img src="images/message3 logo.png"></li>
+                <li><img src="images/tv 3 logo.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input class="search-txt" type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingToggle()">
+                <img src="images/profilepic3.png">
+            </div>
+
+        </div>
+        <!-- --------------settings-menu------------- -->
+        <div class="settings-menu">
+ 
+            <div id="light-btn" class="light-btn-on">
+                <span></span>
+            </div>
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profilepic3.png">
+                    <div>
+                        <p>Naman Goel</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback01.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to upgrade</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/settings logo.png" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help logo.png" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/bightness.png" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout (2).png" class="settings-icon">
+                    <a href="#">logout<img src="images/arrow.png" width="10px"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!-- --------------left-sidebar------------- -->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news logo.png">Latest News</a>
+                <a href="#"><img src="images/friends1logo.png">Friends</a>
+                <a href="#"><img src="images/group2logo.png">Group</a>
+                <a href="#"><img src="images/cart logo.png">Market Place</a>
+                <a href="#"><img src="images/watch2 logo.png">Watch</a>
+                <a href="#"><img src="images/live logo.png">Go Live</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>More For You</p>
+                <a href="#"><img src="images/bookmark logo.png"> Saved </a>
+                <a href="#"><img src="images/pages logo.png"> Pages </a>
+                <a href="#"><img src="images/game logo.png"> Games </a>
+                <a href="#"><img src="images/reels logo.png"> Reels </a>
+                <a href="#"><img src="images/memories logo.png">Memories</a>
+            </div>
+
+
+        </div>
+
+        <!-- --------------main-content------------- -->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Rachel Green</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Chandler Bing</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Monica Geller</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Joey Tribiyanni</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profilepic3.png">
+                    <div>
+                        <p>Naman Goel</p>
+                        <small>public <i class="fa-solid fa-sort-down"></i></small>
+                    </div>
+                </div>
+
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="what's on your mind Naman"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Live Video</a>
+                        <a href="#"><img src="images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Feeling Activity</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profilepic3.png">
+                        <div>
+                            <p>Naman Goel</p>
+                            <span>June 21 2022, 12:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v "></i></a>
+                </div>
+                <p class="post-text">My New Gaming Console <a href="#">#Gamingsetup</a></p>
+                <img src="images/post123.jpg" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 158</div>
+                        <div><img src="images/comments.png"> 87</div>
+                        <div><img src="images/share.png"> 48</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profilepic3.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profilepic3.png">
+                        <div>
+                            <p>Naman Goel</p>
+                            <span>November 18 2021, 10:45 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v "></i></a>
+                </div>
+                <p class="post-text">My Travel Pic <a href="#">#treaking</a></p>
+                <img src="images/post1234.jpg" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 358</div>
+                        <div><img src="images/comments.png"> 174</div>
+                        <div><img src="images/share.png"> 75</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profilepic3.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profilepic3.png">
+                        <div>
+                            <p>Naman Goel</p>
+                            <span>November 18 2021, 10:45 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v "></i></a>
+                </div>
+                <p class="post-text">Friends Forever <a href="#">#friends</a></p>
+                <img src="images/post789.jpg" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 288</div>
+                        <div><img src="images/comments.png"> 114</div>
+                        <div><img src="images/share.png"> 65</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profilepic3.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profilepic3.png">
+                        <div>
+                            <p>Naman Goel</p>
+                            <span>December 24 2021, 19:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v "></i></a>
+                </div>
+                <p class="post-text">Snow in the forest <a href="#">#Snow</a></p>
+                <img src="images/post-snow.jpg" class="post-img">
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/like-blue.png"> 359</div>
+                        <div><img src="images/comments.png"> 147</div>
+                        <div><img src="images/share.png"> 85</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profilepic3.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <button type="button" class="load-more-botton">Load More</button>
+
+
+
+
+
+        </div>
+
+        <!-- --------------right-sidebar------------- -->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Knowledge Park 3</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>July</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Knowledge Park 2</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/kasol.jpg" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p> Rachel Green</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p> Chandler Bing</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p> Monica Geller</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
